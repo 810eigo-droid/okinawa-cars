@@ -3,3 +3,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .date-band p>span{white-space:nowrap;flex-shrink:0}
 @media(max-width:360px){.date-band{padding:20px 15px}.date-band>p{gap:10px}.date-band p>span{font-size:16px}.date-band p>strong{font-size:36px}}
+/* Event illustrations displayed directly from the supplied flyer. */
+.event-grid article{padding:0 0 26px;overflow:hidden;text-align:left}.event-art{height:235px;display:grid;place-items:center;background:#fff0c4;margin-bottom:24px}.event-art.food{background:#dcf4f8}.event-art.jaf{background:#e4f3dc}.event-art>div{width:194px;height:194px;border-radius:50%;background-image:url('./assets/hero-flyer.webp');background-repeat:no-repeat;background-size:744.5px 471.5px;box-shadow:0 8px 18px #17345b12}.event-art.stamp>div{background-position:-536px -31px}.event-art.food>div{background-position:0 -190px}.event-art.jaf>div{background-position:-10px -30px}.event-grid article>.event-no,.event-grid article>h3,.event-grid article>p{margin-left:26px;margin-right:20px}.event-grid article>h3{font-size:23px}.event-grid article>p{margin-top:8px}.event-grid article>.event-no{margin-bottom:8px}
+@media(max-width:800px){.event-grid article{padding:0 0 24px}.event-art{height:220px}.event-grid article>h3{font-size:23px}}
+.event-art.food>div{width:165px;height:165px;background-position:-4px -193px}.event-art.jaf>div{width:164px;height:164px;background-position:-20px -30px}
