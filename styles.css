@@ -44,3 +44,14 @@
 .art-caption{color:#165777}
 .hero-bottom{background:#007a9b;color:#fff;border-top-color:#ffffff40}
 @media(max-width:760px){.hero:after{background:linear-gradient(180deg,rgba(235,250,255,.76),rgba(232,249,255,.66) 42%,rgba(230,249,255,.12) 70%,transparent)}}
+
+/* Decorative PC-only glints; finish within five seconds, without controls. */
+.hero-sparkles{display:none;position:absolute;inset:0;pointer-events:none;overflow:hidden}
+@media(min-width:761px){
+  .hero-sparkles{display:block}
+  .hero-sparkles span{position:absolute;left:var(--x);top:var(--y);font-size:var(--size);line-height:1;color:#ffd45a;text-shadow:0 0 8px #fff,0 0 18px #ffe297;opacity:.65;animation:hero-glint 4.8s ease-in-out var(--delay) 1 both}
+  .hero-sparkles span:nth-child(even){color:white;text-shadow:0 0 7px white,0 0 16px #b1f3ff}
+}
+@keyframes hero-glint{0%,42%,82%{opacity:.2;transform:scale(.55) rotate(-12deg)}20%,64%{opacity:1;transform:scale(1.22) rotate(14deg)}100%{opacity:.65;transform:scale(.85) rotate(0)}}
+@media(prefers-reduced-motion:reduce){.hero-sparkles span{animation:none}}
+@media print{.hero-sparkles{display:none}}
