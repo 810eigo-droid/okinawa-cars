@@ -2,6 +2,11 @@
 .medal-upgraded .hero-art img{aspect-ratio:1672/941;object-fit:contain}
 .seaside-banner{display:none}
 .seaside-upgraded .selection-photo img{aspect-ratio:3/2;object-fit:contain}
+@media(max-width:760px){
+ .seaside-upgraded .hero .hero-art{width:100%;max-width:none;margin:24px 0 4px;padding:0;border:0;border-radius:0;box-shadow:none}
+ .seaside-upgraded .hero .hero-art img{width:100%;border-radius:0;aspect-ratio:1672/941;object-fit:contain}
+ .seaside-upgraded .hero .art-caption{padding:10px 12px;background:#fff}
+}
 @media(min-width:761px){
  .seaside-upgraded .hero{background:#e8f5ff}
  .seaside-upgraded .hero-inner,.seaside-upgraded .b-info{display:none}
