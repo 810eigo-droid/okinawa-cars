@@ -1,8 +1,8 @@
-/* Separate review variant: the current index.html is unchanged. */
+/* Mobile hero: supplied SP visual, event information, then flyer artwork. */
 .sp-hero-visual { display: none; }
 @media (max-width: 760px) {
   .hero { background: #eaf7ff; }
-  .hero::after, .hero-scenery, .hero-art, .hero .motion-toggle { display: none; }
+  .hero::after, .hero-scenery { display: none; }
   .hero-inner.container { width: 100%; padding-top: 0; gap: 0; }
   .hero-copy {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -11,5 +11,6 @@
   .sp-hero-visual { display: block; order: 0; width: 100%; }
   .sp-hero-visual img { width: 100%; height: auto; }
   .sp-hero-visual small { display: block; padding: 5px 16px; font-size: 9px; text-align: right; color: #36596c; }
+  .hero .hero-art { display: block; order: 2; width: calc(100% - 40px); margin: 24px auto 4px; transform: none; }
   .hero .event-bar { width: calc(100% - 32px); margin: 10px auto 0; }
 }
