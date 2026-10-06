@@ -67,3 +67,12 @@
 .flyer-cars{background-image:none;overflow:hidden;position:relative}.flyer-cars>img{position:absolute;inset:0 auto 0 0;width:140%;max-width:none;height:100%;object-fit:cover;object-position:left 94%}
 /* Supplied replacement banner: show every edge without cropping. */
 .flyer-cars{aspect-ratio:auto}.flyer-cars>img{position:static;width:100%;max-width:100%;height:auto;object-fit:contain}
+.flyer-cars{cursor:pointer;isolation:isolate}.flyer-cars:focus-visible{outline:3px solid #0564b8;outline-offset:6px}
+@media(prefers-reduced-motion:no-preference){
+.flyer-cars.cars-playing>img{animation:cars-arrival 1.25s cubic-bezier(.2,.7,.3,1) both;transform-origin:50% 80%}
+.flyer-cars.cars-playing:after{content:"";position:absolute;inset:-25% -60%;background:linear-gradient(110deg,transparent 40%,#fff9 49%,transparent 57%);pointer-events:none;animation:cars-shine 1.4s ease-in-out .25s both}
+@keyframes cars-arrival{0%{transform:perspective(900px) translateY(12px) scale(.94) rotateX(3deg);filter:brightness(.96)}55%{transform:perspective(900px) translateY(-3px) scale(1);filter:brightness(1.03)}76%{transform:translateY(2px) scale(.997)}100%{transform:translateY(0) scale(1);filter:brightness(1)}}
+@keyframes cars-shine{0%{translate:-65% 0;opacity:0}15%{opacity:.65}80%{opacity:.65}100%{translate:65% 0;opacity:0}}
+}
+@media(prefers-reduced-motion:reduce){.flyer-cars.cars-playing>img{animation:none}.flyer-cars:after{display:none}}
+.event-art.stamp>div{background-image:url('./assets/event-stamp-rally.png');background-size:contain;background-position:center;border-radius:14px;outline:0;box-shadow:none;width:210px;height:210px;transform:rotate(-3deg)}
