@@ -1,4 +1,5 @@
 .variant-copy,.variant-visual{display:none}
+.selection-photo img{aspect-ratio:3/2;object-fit:contain}
 .b-info{background:#fff2bd;color:#254964;font-size:14px}
 .b-info>.container{display:flex;justify-content:center;gap:75px;padding:13px 0}
 .b-info b{display:inline-block;margin-right:10px;color:#086399}.b-info strong{font-size:19px}
