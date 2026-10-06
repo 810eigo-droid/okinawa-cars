@@ -38,3 +38,17 @@
     section?.querySelectorAll('.motion-wait').forEach(el => {el.classList.remove('motion-wait');observer?.unobserve(el);});
   }));
 })();
+
+// Named text effects play once, without changing or duplicating the text.
+(() => {
+ const pref = matchMedia('(prefers-reduced-motion: reduce)');
+ const items = [...document.querySelectorAll('[data-text-motion]')];
+ if(pref.matches || !('IntersectionObserver' in window)) return;
+ const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+  if(!entry.isIntersecting) return;
+  entry.target.classList.add('text-play');
+  observer.unobserve(entry.target);
+ }), {threshold:0.65});
+ items.forEach(el => observer.observe(el));
+ pref.addEventListener('change', () => {observer.disconnect();items.forEach(el => el.classList.remove('text-play'));});
+})();
