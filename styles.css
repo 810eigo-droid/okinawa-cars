@@ -55,3 +55,15 @@
 @keyframes hero-glint{0%,42%,82%{opacity:.2;transform:scale(.55) rotate(-12deg)}20%,64%{opacity:1;transform:scale(1.22) rotate(14deg)}100%{opacity:.65;transform:scale(.85) rotate(0)}}
 @media(prefers-reduced-motion:reduce){.hero-sparkles span{animation:none}}
 @media print{.hero-sparkles{display:none}}
+
+/* A coordinated fair palette for the participating dealer cards. */
+.dealers{background:linear-gradient(135deg,#eef9fc 0%,#f5f8fc 50%,#fff8ec 100%)}
+.dealer-grid>a{--dealer-accent:#1161ad;--dealer-tint:#eaf3ff;--dealer-border:#cbdff5;background:linear-gradient(110deg,var(--dealer-tint),#fff 78%);border-color:var(--dealer-border);border-left:4px solid var(--dealer-accent);border-radius:12px}
+.dealer-grid>a:nth-child(4n+2){--dealer-accent:#087669;--dealer-tint:#e7f6f1;--dealer-border:#c5e6dc}
+.dealer-grid>a:nth-child(4n+3){--dealer-accent:#b34839;--dealer-tint:#fff0e9;--dealer-border:#f0d2c7}
+.dealer-grid>a:nth-child(4n){--dealer-accent:#86600e;--dealer-tint:#fff5d9;--dealer-border:#e9dba8}
+.dealer-no{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--dealer-accent);color:#fff;font-weight:700}
+.dealer-link{color:var(--dealer-accent);font-weight:700}
+.dealer-grid>a:hover{border-color:var(--dealer-accent);box-shadow:0 6px 18px #10334c12}
+.dealer-grid>a:focus-visible{outline-color:var(--dealer-accent)}
+@media(max-width:360px){.dealer-no{flex-basis:25px;width:25px;height:25px;font-size:10px}.dealer-grid>a{padding-inline:12px}}
