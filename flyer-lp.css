@@ -80,3 +80,10 @@
 /* Only the menu control follows scrolling; the access banner stays in flow. */
 .menu-toggle{position:fixed;right:24px;top:18px;z-index:20;box-shadow:0 4px 16px #14265d25}header{padding-right:100px}.floating{position:static;transform:none;translate:none;width:fit-content;max-width:calc(100% - 24px);margin:0 auto 32px;box-shadow:0 5px 20px #08274912}footer{padding-bottom:35px}
 @media(max-width:800px){.menu-toggle{right:16px;top:13px}header{padding-right:80px}}
+@media(max-width:800px){
+.floating{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);margin:0;z-index:15;box-shadow:0 8px 30px #08274930}
+.floating.mobile-bar-managed{opacity:0;visibility:hidden;translate:0 18px;pointer-events:none;transition:opacity .3s ease,translate .3s ease,visibility .3s}
+.floating.mobile-bar-managed.mobile-bar-ready{opacity:1;visibility:visible;translate:0 0;pointer-events:auto}
+footer{padding-bottom:140px}
+}
+@media(prefers-reduced-motion:reduce){.floating.mobile-bar-managed{transition:none;translate:none}}
