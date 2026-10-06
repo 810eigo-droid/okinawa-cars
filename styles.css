@@ -22,7 +22,7 @@
 .hero-scenery{position:absolute;inset:-5%;z-index:-2;background:url('./assets/okinawa-drive.webp') center 57%/cover no-repeat;transform:scale(1.04);pointer-events:none}
 .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(3,31,76,.82),rgba(3,50,100,.57) 48%,rgba(0,90,146,.38));pointer-events:none}
 .hero:before{display:none}
-.hero.motion-enabled .hero-scenery{animation:scenic-drift 22s ease-in-out infinite alternate}
+.hero.motion-enabled .hero-scenery{animation:scenic-drift 14s ease-in-out infinite alternate}
 .hero.motion-paused .hero-scenery{animation-play-state:paused}
 @keyframes scenic-drift{from{transform:scale(1.04) translate3d(-1%,0,0)}to{transform:scale(1.15) translate3d(1%,1%,0)}}
 .hero-copy{text-shadow:0 2px 14px rgba(0,20,55,.24)}
