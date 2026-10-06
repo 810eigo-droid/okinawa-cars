@@ -67,3 +67,12 @@
 .dealer-grid>a:hover{border-color:var(--dealer-accent);box-shadow:0 6px 18px #10334c12}
 .dealer-grid>a:focus-visible{outline-color:var(--dealer-accent)}
 @media(max-width:360px){.dealer-no{flex-basis:25px;width:25px;height:25px;font-size:10px}.dealer-grid>a{padding-inline:12px}}
+
+/* Bring the full flyer closer to the closing message and give it more space. */
+@media(min-width:761px){
+ .visit-inner{justify-content:center;gap:clamp(48px,7vw,100px);padding-block:60px}
+ .visit-inner>div{flex:0 1 530px;min-width:0}
+ .flyer-preview{width:clamp(250px,24vw,310px);transform:rotate(3deg);border-width:7px}
+ .flyer-preview:hover{transform:rotate(0deg) scale(1.025)}
+}
+@media(min-width:761px) and (max-width:1000px){.visit-inner{gap:36px}.visit h2{font-size:34px}.flyer-preview{width:250px}}
