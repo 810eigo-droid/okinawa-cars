@@ -34,3 +34,6 @@
 @media(hover:hover){.event-grid article:hover .event-art>div{transform:rotate(0) scale(1.04);box-shadow:0 13px 22px #14375425}.dealer-grid a:hover,.shortcuts a:hover{transform:translateY(-3px);box-shadow:0 8px 18px #16466b12}.access figure a{display:block;overflow:hidden}.access figure a:hover img{transform:scale(1.025)}.flyer-layout>a:hover img{transform:translateY(-4px) rotate(-1deg)}}
 }
 @media(prefers-reduced-motion:reduce){.motion-wait{opacity:1;translate:none}.motion-reveal,.event-art>div,.dealer-grid a,.shortcuts a{transition:none}.hero-image,.stock strong{animation:none}}
+/* Original flyer car illustration, presented as a cropped decorative strip. */
+.flyer-cars{width:min(850px,100%);aspect-ratio:3.4;margin:0 auto 32px;background-image:url('./assets/flyer.webp');background-size:140% auto;background-position:left 94%;background-repeat:no-repeat;border-radius:18px;box-shadow:0 6px 20px #ddb73b15}
+@media(max-width:800px){.flyer-cars{border-radius:10px;margin-bottom:24px;aspect-ratio:3.4}}
