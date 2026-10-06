@@ -37,3 +37,31 @@
 /* Original flyer car illustration, presented as a cropped decorative strip. */
 .flyer-cars{width:min(850px,100%);aspect-ratio:3.4;margin:0 auto 32px;background-image:url('./assets/flyer.webp');background-size:140% auto;background-position:left 94%;background-repeat:no-repeat;border-radius:18px;box-shadow:0 6px 20px #ddb73b15}
 @media(max-width:800px){.flyer-cars{border-radius:10px;margin-bottom:24px;aspect-ratio:3.4}}
+[data-text-motion]{display:inline-block}
+@media(prefers-reduced-motion:no-preference){
+.stock.motion-seen strong{animation:none}
+[data-text-motion].text-play{animation-delay:.18s;animation-fill-mode:both;animation-iteration-count:1}
+[data-text-motion="pop"].text-play,.stock.motion-seen strong[data-text-motion="pop"].text-play{animation:letter-pop .8s cubic-bezier(.2,.7,.3,1) .18s both}
+[data-text-motion="burst"].text-play{animation-name:letter-burst;animation-duration:.85s;animation-timing-function:ease-out}
+[data-text-motion="skate"].text-play{animation-name:letter-skate;animation-duration:.9s;animation-timing-function:ease-out}
+[data-text-motion="bounce"].text-play{animation-name:letter-bounce;animation-duration:1s;animation-timing-function:ease-out}
+[data-text-motion="type"].text-play{animation-name:letter-type;animation-duration:1.2s;animation-timing-function:steps(6,end)}
+[data-text-motion="up"].text-play{animation-name:letter-up;animation-duration:.8s;animation-timing-function:ease-out}
+@keyframes letter-pop{0%{opacity:0;transform:scale(.72)}55%{opacity:1;transform:scale(1.09)}78%{transform:scale(.97)}100%{transform:scale(1)}}
+@keyframes letter-burst{0%{opacity:0;transform:scale(.75)}50%{opacity:1;transform:scale(1.06)}75%{transform:scale(.99)}100%{transform:scale(1)}}
+@keyframes letter-skate{0%{opacity:0;transform:translateX(-35px) skewX(-10deg)}65%{opacity:1;transform:translateX(6px) skewX(3deg)}100%{transform:translateX(0) skewX(0)}}
+@keyframes letter-bounce{0%{transform:translateY(0)}25%{transform:translateY(-14px)}45%{transform:translateY(0)}65%{transform:translateY(-7px)}80%{transform:translateY(0)}90%{transform:translateY(-2px)}100%{transform:translateY(0)}}
+@keyframes letter-type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes letter-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(prefers-reduced-motion:reduce){[data-text-motion]{animation:none!important;clip-path:none!important}}
+[data-text-motion="block"]{position:relative}
+@media(prefers-reduced-motion:no-preference){
+[data-text-motion="block"].text-play:after{content:"";position:absolute;inset:0;background:#ffe24c;transform-origin:left;animation:letter-block .95s ease-in-out .18s both;pointer-events:none}
+[data-text-motion="roll"].text-play{animation-name:letter-roll;animation-duration:.85s;animation-timing-function:ease-out}
+@keyframes letter-block{0%{transform:scaleX(0)}40%{transform:scaleX(1);transform-origin:left}41%{transform-origin:right}100%{transform:scaleX(0);transform-origin:right}}
+@keyframes letter-roll{0%{opacity:0;transform:translateY(12px) rotate(-28deg)}65%{opacity:1;transform:translateY(0) rotate(5deg)}100%{transform:translateY(0) rotate(-4deg)}}
+}
+@media(prefers-reduced-motion:reduce){[data-text-motion="block"]:after{display:none}}
+@media(max-width:360px){.dealers h2{font-size:23px}}
+.flyer-cars{background-image:none;overflow:hidden;position:relative}.flyer-cars>img{position:absolute;inset:0 auto 0 0;width:140%;max-width:none;height:100%;object-fit:cover;object-position:left 94%}
