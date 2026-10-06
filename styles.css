@@ -22,19 +22,14 @@
 .hero-scenery{position:absolute;inset:-5%;z-index:-2;background:url('./assets/okinawa-drive.webp') center 57%/cover no-repeat;transform:scale(1.04);pointer-events:none}
 .hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(3,31,76,.82),rgba(3,50,100,.57) 48%,rgba(0,90,146,.38));pointer-events:none}
 .hero:before{display:none}
-.hero.motion-enabled .hero-scenery{animation:scenic-drift 14s ease-in-out infinite alternate}
-.hero.motion-paused .hero-scenery{animation-play-state:paused}
+.hero.motion-enabled .hero-scenery{animation:scenic-drift 5s ease-out both}
 @keyframes scenic-drift{from{transform:scale(1.04) translate3d(-1%,0,0)}to{transform:scale(1.15) translate3d(1%,1%,0)}}
 .hero-copy{text-shadow:0 2px 14px rgba(0,20,55,.24)}
 .hero-tags span{background:rgba(3,36,77,.48)}
 .hero-bottom{position:relative;background:rgba(2,38,89,.55)}
-.motion-toggle{margin-top:14px;padding:7px 12px;min-height:36px;border:1px solid #ffffff70;border-radius:20px;color:white;background:rgba(3,31,76,.5);font:inherit;font-size:10px;cursor:pointer}
-.motion-toggle:hover{background:rgba(3,31,76,.85)}
-.motion-toggle:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
-.motion-toggle[hidden]{display:none}
-@media(max-width:760px){.hero-scenery{background-position:42% center}.hero:after{background:linear-gradient(180deg,rgba(3,31,76,.79),rgba(3,50,100,.64) 55%,rgba(0,72,130,.5))}.motion-toggle{margin-top:10px}}
+@media(max-width:760px){.hero-scenery{background-position:42% center}.hero:after{background:linear-gradient(180deg,rgba(3,31,76,.79),rgba(3,50,100,.64) 55%,rgba(0,72,130,.5))}}
 @media(prefers-reduced-motion:reduce){.hero.motion-enabled .hero-scenery{animation:none}}
-@media print{.hero-scenery,.motion-toggle{display:none}}
+@media print{.hero-scenery{display:none}}
 
 /* Clear coastal colors, with a light reading area instead of a dark tint. */
 .hero{color:#103e64;background:#dff7ff}
@@ -47,7 +42,5 @@
 .hero-tags span{background:rgba(255,255,255,.9);border-color:#a6d9e4;color:#125473}
 .hero-art{background:rgba(255,255,255,.92);border-color:#fff;box-shadow:0 18px 45px #006b8e24}
 .art-caption{color:#165777}
-.motion-toggle{color:#165777;background:rgba(255,255,255,.85);border-color:#8cc9d7}
-.motion-toggle:hover{background:#fff}
 .hero-bottom{background:#007a9b;color:#fff;border-top-color:#ffffff40}
 @media(max-width:760px){.hero:after{background:linear-gradient(180deg,rgba(235,250,255,.76),rgba(232,249,255,.66) 42%,rgba(230,249,255,.12) 70%,transparent)}}
