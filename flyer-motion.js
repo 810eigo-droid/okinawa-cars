@@ -52,3 +52,28 @@
  items.forEach(el => observer.observe(el));
  pref.addEventListener('change', () => {observer.disconnect();items.forEach(el => el.classList.remove('text-play'));});
 })();
+
+// A short arrival and light sweep; replay by touch, click or keyboard.
+(() => {
+ const banner = document.querySelector('.flyer-cars');
+ if (!banner) return;
+ const preference = matchMedia('(prefers-reduced-motion: reduce)');
+ let timer;
+ const play = () => {
+  if(preference.matches || banner.classList.contains('cars-playing')) return;
+  banner.classList.add('cars-playing');
+  timer = setTimeout(() => banner.classList.remove('cars-playing'), 1800);
+ };
+ banner.addEventListener('click', play);
+ banner.addEventListener('keydown', event => {
+  if(event.key === 'Enter' || event.key === ' ') {event.preventDefault();play();}
+ });
+ let observer;
+ if('IntersectionObserver' in window) {
+  observer = new IntersectionObserver(entries => {
+   if(entries.some(entry => entry.isIntersecting)) {play();observer.disconnect();}
+  }, {threshold:.55});
+  observer.observe(banner);
+ }
+ preference.addEventListener('change', () => {clearTimeout(timer);banner.classList.remove('cars-playing');observer?.disconnect();});
+})();
