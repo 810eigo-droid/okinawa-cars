@@ -1,6 +1,7 @@
 /* Separate asset-upgrade previews: preserve the original comparison pages. */
 .medal-upgraded .hero-art img{aspect-ratio:1672/941;object-fit:contain}
 .seaside-banner{display:none}
+.seaside-upgraded .selection-photo img{aspect-ratio:3/2;object-fit:contain}
 @media(min-width:761px){
  .seaside-upgraded .hero{background:#e8f5ff}
  .seaside-upgraded .hero-inner,.seaside-upgraded .b-info{display:none}
