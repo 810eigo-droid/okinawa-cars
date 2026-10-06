@@ -1,6 +1,22 @@
 /* Separate asset-upgrade previews: preserve the original comparison pages. */
 .medal-upgraded .hero-art img{aspect-ratio:1672/941;object-fit:contain}
 .seaside-banner{display:none}
+.seaside-upgraded .trust{background:linear-gradient(135deg,#edf8ff,#f4faff)}
+.seaside-upgraded .trust-card{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:34px 28px 26px;border:1px solid #d2e5f3;border-radius:20px;box-shadow:0 7px 22px #19639005;overflow:hidden}
+.seaside-upgraded .trust-card:before{content:"";position:absolute;top:0;left:28px;width:56px;height:5px;border-radius:0 0 5px 5px;background:#0560e7}
+.seaside-upgraded .card-number{left:auto;right:28px;top:31px;color:#8aa5bc;text-align:right;font:700 23px/1.2 Arial}
+.seaside-upgraded .card-number:after{display:block;font:700 10px/1.6 Arial;margin-top:4px}
+.seaside-upgraded .trust-card:nth-child(1) .card-number:after{content:"QUALITY"}
+.seaside-upgraded .trust-card:nth-child(2) .card-number:after{content:"PRICE"}
+.seaside-upgraded .trust-card:nth-child(3) .card-number:after{content:"SUPPORT"}
+.seaside-upgraded .trust-card .line-icon{width:88px;height:88px;padding:17px;border-radius:20px;background:#eaf6ff;stroke:#0059c7;margin:0 0 26px;flex-shrink:0}
+.seaside-upgraded .trust-card h3{font-size:25px;letter-spacing:0;margin:0 0 16px;line-height:1.5}
+.seaside-upgraded .trust-card h3 .accent-stop{color:#efb300}
+.seaside-upgraded .trust-card p{font-size:14px;line-height:1.9;margin-bottom:22px}
+.seaside-upgraded .card-tag{display:flex;align-items:center;gap:10px;align-self:stretch;margin-top:auto;border-top:1px solid #dbeaf5;border-radius:0;padding:18px 0 0;background:transparent;color:#005bdc;font-size:13px;line-height:1.6;text-align:left}
+.seaside-upgraded .card-tag:before{content:"✓";display:grid;place-items:center;width:23px;height:23px;flex:0 0 23px;border-radius:50%;background:#005bdc;color:white;font:bold 16px/1 sans-serif}
+@media(min-width:761px) and (max-width:1050px){.seaside-upgraded .trust-grid{gap:14px}.seaside-upgraded .trust-card{padding-inline:18px}.seaside-upgraded .trust-card h3{font-size:20px}.seaside-upgraded .trust-card p{font-size:12px}.seaside-upgraded .card-tag{font-size:11px}.seaside-upgraded .card-number{right:18px}}
+@media(max-width:760px){.seaside-upgraded .trust-card{padding:28px 25px 24px}.seaside-upgraded .trust-card .line-icon{width:76px;height:76px;padding:15px;margin-bottom:22px}.seaside-upgraded .trust-card h3{font-size:24px}.seaside-upgraded .trust-card p{font-size:14px}.seaside-upgraded .card-number{top:28px;right:25px}.seaside-upgraded .card-tag{font-size:13px}}
 .seaside-upgraded .selection-photo img{aspect-ratio:1.12;object-fit:cover}
 @media(max-width:760px){.seaside-upgraded .selection-photo img{aspect-ratio:3/2;object-fit:contain}}
 @media(max-width:760px){
