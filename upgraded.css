@@ -32,5 +32,7 @@
  .seaside-banner>small{display:block;text-align:right;font-size:9px;color:#345773;padding:4px 8px}
 }
 /* Calm blue backdrop keeps the dealer names prominent. */
-.seaside-upgraded .dealers{background:linear-gradient(135deg,#edf6fc 0%,#f7fbfe 55%,#eaf5fa 100%)}
+.seaside-upgraded .dealers{background-color:#f3faff;background-image:linear-gradient(#f3faff 0%,#f3faff 42%,#f3faff00 65%),url('./assets/dealer-seaside.png');background-position:center,center bottom;background-size:100% 100%,100% auto;background-repeat:no-repeat}
 .seaside-upgraded .dealer-grid>a{background:#fff;box-shadow:0 4px 14px #254c7310}
+
+@media(max-width:760px){.seaside-upgraded .dealers{background-image:linear-gradient(#f3faff 0%,#f3faff 64%,#f3faff00 82%),url('./assets/dealer-seaside.png');background-size:100% 100%,auto 430px;background-position:center,right bottom}}
