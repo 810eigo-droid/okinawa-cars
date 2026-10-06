@@ -76,3 +76,7 @@
 }
 @media(prefers-reduced-motion:reduce){.flyer-cars.cars-playing>img{animation:none}.flyer-cars:after{display:none}}
 .event-art.stamp>div{background-image:url('./assets/event-stamp-rally.png');background-size:contain;background-position:center;border-radius:14px;outline:0;box-shadow:none;width:210px;height:210px;transform:rotate(-3deg)}
+
+/* Only the menu control follows scrolling; the access banner stays in flow. */
+.menu-toggle{position:fixed;right:24px;top:18px;z-index:20;box-shadow:0 4px 16px #14265d25}header{padding-right:100px}.floating{position:static;transform:none;translate:none;width:fit-content;max-width:calc(100% - 24px);margin:0 auto 32px;box-shadow:0 5px 20px #08274912}footer{padding-bottom:35px}
+@media(max-width:800px){.menu-toggle{right:16px;top:13px}header{padding-right:80px}}
