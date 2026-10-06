@@ -5,3 +5,6 @@
 @keyframes menu-arrive{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
 @media(prefers-reduced-motion:no-preference){#fair-menu[open]{animation:menu-arrive .32s ease-out}#fair-menu[open] nav{animation:menu-arrive .45s ease-out}}
 @media(max-width:360px){#fair-menu{padding:20px}.menu-intro h2{font-size:28px}.menu-intro>b{width:58px;height:58px;font-size:22px}#fair-menu nav a{font-size:14px}}
+/* Desktop uses the same guide as a right-side drawer. */
+@media(min-width:761px){.seaside-upgraded .header{gap:24px}.seaside-upgraded .header nav{margin-left:auto}.menu-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}.seaside-upgraded .header .brand{flex-shrink:0}#fair-menu{width:460px} }
+@media(min-width:761px) and (max-width:1000px){.seaside-upgraded .header{gap:14px}.seaside-upgraded .header nav>a:not(.nav-access){display:none}}
