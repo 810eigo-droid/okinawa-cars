@@ -76,3 +76,5 @@
  .flyer-preview:hover{transform:rotate(0deg) scale(1.025)}
 }
 @media(min-width:761px) and (max-width:1000px){.visit-inner{gap:36px}.visit h2{font-size:34px}.flyer-preview{width:250px}}
+
+@media(max-width:760px){.hero-art picture{display:block}.hero-art picture img{aspect-ratio:1672/941;object-fit:contain}}
