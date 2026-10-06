@@ -31,3 +31,6 @@
  .seaside-banner img{width:100%;height:auto}
  .seaside-banner>small{display:block;text-align:right;font-size:9px;color:#345773;padding:4px 8px}
 }
+/* Soft gingham and stars supplied for the dealer section. */
+.seaside-upgraded .dealers{background-color:#edf6fc;background-image:linear-gradient(#ffffffd6,#ffffffd6),url('./assets/dealer-stars.png');background-size:auto,267px 358px;background-repeat:repeat}
+.seaside-upgraded .dealer-grid>a{background:#fff;box-shadow:0 4px 14px #254c7310}
