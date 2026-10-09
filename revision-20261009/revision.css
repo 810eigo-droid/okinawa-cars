@@ -66,3 +66,7 @@
  .intro .fair-balloon:nth-child(n+5){display:none}
 }
 
+
+/* Match the trust-card heading size for every dealer name. */
+.dealer-grid strong{font-size:23px;font-weight:700;line-height:1.65;white-space:nowrap;flex-shrink:0}
+@media(max-width:1000px){.dealer-grid :is(a,.dealer-card){flex-wrap:wrap;gap:4px 12px}.dealer-grid .dealer-link{flex-basis:100%;text-align:right;margin-left:0}}
