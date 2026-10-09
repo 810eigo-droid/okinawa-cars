@@ -24,3 +24,10 @@
 
 .intro .stock-heading{display:block;position:relative;width:100%;aspect-ratio:2172/250;margin:0 auto 24px;padding:0;border:0;overflow:hidden;background:none}.intro .stock-heading:before,.intro .stock-heading:after{display:none}.stock-heading img{position:absolute;width:100%;max-width:none;height:auto;left:0;top:-92%}
 @media(min-width:801px){.intro .stock.stock-art{width:min(720px,90%)}}
+
+/* A single light sweep, clipped to the transparent stock artwork. */
+@media(prefers-reduced-motion:no-preference){
+ .stock-crop::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.15) 44%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.15) 56%,transparent 60%) -100% 0/300% 100% no-repeat;-webkit-mask:url('./assets/400.png') center/100% 100% no-repeat;mask:url('./assets/400.png') center/100% 100% no-repeat}
+ .stock-crop.text-play::after{animation:stock-shine 1.1s ease-in-out 1.05s both}
+ @keyframes stock-shine{0%{opacity:0;background-position:100% 0}10%{opacity:1}90%{opacity:1}100%{opacity:0;background-position:0% 0}}
+}
