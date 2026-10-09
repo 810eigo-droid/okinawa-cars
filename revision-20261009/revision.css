@@ -21,3 +21,6 @@
 /* Use the supplied flyer lettering directly, without altering its pixels. */
 .intro .stock.stock-art{display:block;width:min(480px,90%);padding:0;margin:24px auto 38px}.stock-crop{display:block;position:relative;width:100%;aspect-ratio:1884/835;overflow:hidden}.stock-crop>img{display:block;width:100%;height:auto}
 
+
+.intro .stock-heading{display:block;position:relative;width:100%;aspect-ratio:2172/250;margin:0 auto 24px;padding:0;border:0;overflow:hidden;background:none}.intro .stock-heading:before,.intro .stock-heading:after{display:none}.stock-heading img{position:absolute;width:100%;max-width:none;height:auto;left:0;top:-92%}
+@media(min-width:801px){.intro .stock.stock-art{width:min(720px,90%)}}
