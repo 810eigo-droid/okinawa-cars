@@ -52,3 +52,17 @@
 .intro .fair-balloon:nth-child(3){left:3%;width:54px;height:68px}
 .intro .fair-balloon:nth-child(4){left:auto;right:3%;width:58px;height:73px}
 @media(max-width:800px){.intro .fair-balloon{width:32px;height:41px;left:0;opacity:.55}.intro .fair-balloon:nth-child(2){width:30px;height:39px;right:0}}
+
+.intro .fair-balloon:nth-child(5){--balloon:#b9a3ee;left:8%;top:18%;width:42px;height:54px;animation-delay:-2s}
+.intro .fair-balloon:nth-child(6){--balloon:#f6a49c;left:auto;right:8%;top:39%;width:44px;height:56px;animation-delay:-4s}
+.intro .fair-balloon:nth-child(7){--balloon:#ffcb6b;left:6%;top:57%;width:40px;height:51px;animation-delay:-6s}
+.intro .fair-balloon:nth-child(8){--balloon:#77c9ee;left:auto;right:4%;top:79%;width:44px;height:56px;animation-delay:-1.5s}
+@media(max-width:800px){
+ .intro .fair-balloon:nth-child(-n+4){display:block;width:26px;height:34px;opacity:.65}
+ .intro .fair-balloon:nth-child(1){left:0;right:auto;top:25%}
+ .intro .fair-balloon:nth-child(2){left:auto;right:0;top:27%}
+ .intro .fair-balloon:nth-child(3){left:0;right:auto;top:49%}
+ .intro .fair-balloon:nth-child(4){left:auto;right:0;top:49%}
+ .intro .fair-balloon:nth-child(n+5){display:none}
+}
+
