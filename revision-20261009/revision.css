@@ -70,3 +70,21 @@
 /* Match the trust-card heading size for every dealer name. */
 .dealer-grid strong{font-size:23px;font-weight:700;line-height:1.65;white-space:nowrap;flex-shrink:0}
 @media(max-width:1000px){.dealer-grid :is(a,.dealer-card){flex-wrap:wrap;gap:4px 12px}.dealer-grid .dealer-link{flex-basis:100%;text-align:right;margin-left:0}}
+
+/* Asymmetric clusters instead of two vertical rows. */
+@media(min-width:801px){
+ .intro .fair-balloon:nth-child(1){left:1%;top:36%;width:66px;height:83px}
+ .intro .fair-balloon:nth-child(2){right:2%;top:65%;width:64px;height:81px}
+ .intro .fair-balloon:nth-child(3){left:4%;top:71%;width:44px;height:56px}
+ .intro .fair-balloon:nth-child(4){right:2%;top:23%;width:59px;height:74px}
+ .intro .fair-balloon:nth-child(5){left:17%;top:22%;width:37px;height:47px}
+ .intro .fair-balloon:nth-child(6){right:12%;top:18%;width:35px;height:45px}
+ .intro .fair-balloon:nth-child(7){left:8%;top:32%;width:31px;height:40px}
+ .intro .fair-balloon:nth-child(8){right:8%;top:58%;width:34px;height:44px}
+}
+@media(max-width:800px){
+ .intro .fair-balloon:nth-child(1){left:1%;top:26%;width:29px;height:37px}
+ .intro .fair-balloon:nth-child(2){right:4%;top:52%;width:24px;height:31px}
+ .intro .fair-balloon:nth-child(3){left:7%;top:50%;width:21px;height:28px}
+ .intro .fair-balloon:nth-child(4){right:0;top:30%;width:25px;height:33px}
+}
