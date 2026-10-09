@@ -43,3 +43,12 @@
 .fair-balloon:nth-child(4){--balloon:#a5dcb2;left:auto;right:3%;top:19%;width:42px;height:54px;animation-delay:-1s}
 @media(prefers-reduced-motion:no-preference){.fair-balloon{animation:fair-balloon-float 7s ease-in-out infinite alternate}@keyframes fair-balloon-float{from{translate:0 20px;rotate:-5deg}to{translate:8px -35px;rotate:6deg}}}
 @media(max-width:800px){.intro-balloons{inset:0 -12px}.fair-balloon{width:26px;height:34px;opacity:.22;left:0;top:33%}.fair-balloon:nth-child(2){width:25px;height:32px;right:0;top:59%}.fair-balloon:nth-child(n+3){display:none}.fair-balloon:after{height:40px}}
+
+/* Keep balloons visible above the section background and behind content. */
+.intro>.intro-balloons{z-index:0;inset:0;}
+.intro>:not(.intro-balloons){position:relative;z-index:1}
+.intro .fair-balloon{opacity:.72;width:72px;height:90px;left:2%;}
+.intro .fair-balloon:nth-child(2){left:auto;right:2%;width:65px;height:82px}
+.intro .fair-balloon:nth-child(3){left:3%;width:54px;height:68px}
+.intro .fair-balloon:nth-child(4){left:auto;right:3%;width:58px;height:73px}
+@media(max-width:800px){.intro .fair-balloon{width:32px;height:41px;left:0;opacity:.55}.intro .fair-balloon:nth-child(2){width:30px;height:39px;right:0}}
