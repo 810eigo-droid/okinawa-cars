@@ -1,0 +1,92 @@
+/* October 9: preserve client edits, update only requested presentation. */
+.intro .stock strong,.intro .stock b{color:#ffe329;-webkit-text-stroke:2px #df171b;paint-order:stroke fill;text-shadow:3px 3px 0 #df171b,5px 5px 0 #ffcf7a;font-style:normal}
+.intro .stock strong{-webkit-text-stroke:5px #df171b}.intro .stock:after{background:#fff0b6}
+.event-art>img{width:210px;height:210px;object-fit:contain;filter:drop-shadow(0 7px 7px #153b5918);transition:transform .3s ease}
+.dealer-grid strong{font-size:22px;font-weight:900;line-height:1.5}.dealer-grid :is(a,.dealer-card){min-height:96px;gap:16px}
+@media(max-width:800px){.dealer-grid strong{font-size:19px}.dealer-grid :is(a,.dealer-card){padding:19px 16px;min-height:83px;grid-template-columns:minmax(0,1fr) auto}.dealer-link{font-size:10px}.intro .stock strong{-webkit-text-stroke:3px #df171b}.event-art>img{width:195px;height:195px}}
+@media(max-width:360px){.dealer-grid strong{font-size:17px}.dealer-grid :is(a,.dealer-card){gap:8px;padding-inline:12px}.dealer-link{font-size:9px}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.event-grid article:hover .event-art>img{transform:rotate(-3deg) scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.event-art>img{transition:none}}
+/* Flyer-like tall serif numerals and a red-to-purple extruded shadow. */
+.intro .stock{gap:8px;padding:8px 24px 20px}.intro .stock:after,.intro .stock:before{display:none}
+.intro .stock strong{font-family:'Times New Roman','Yu Mincho',serif;font-size:clamp(120px,16vw,200px);font-weight:700;font-style:normal;letter-spacing:-.055em;color:#fff000;-webkit-text-stroke:7px #ed001b;paint-order:stroke fill;text-shadow:-3px 4px 0 #ed001b,-7px 7px 0 #e60021,-12px 11px 0 #dd002c,-18px 15px 0 #cd003a,-24px 19px 0 #bb0647,-30px 23px 0 #a31057,-36px 27px 0 #851967;line-height:1;padding-right:2px}
+.intro .stock b{font-family:'Yu Mincho','MS PMincho',serif;font-weight:900;font-size:clamp(42px,6vw,74px);color:#fff000;-webkit-text-stroke:5px #ed001b;paint-order:stroke fill;transform:none;text-shadow:-4px 5px 0 #e60021,-10px 10px 0 #cd003a,-17px 15px 0 #bb0647,-24px 20px 0 #a31057,-31px 25px 0 #851967}
+@media(max-width:800px){.intro .stock{padding-left:34px;padding-right:8px;gap:5px}.intro .stock strong{font-size:clamp(116px,33vw,160px);-webkit-text-stroke:5px #ed001b;text-shadow:-3px 4px 0 #ed001b,-7px 7px 0 #dd002c,-12px 11px 0 #cd003a,-17px 15px 0 #bb0647,-22px 19px 0 #a31057,-26px 22px 0 #851967}.intro .stock b{font-size:46px;-webkit-text-stroke:4px #ed001b;text-shadow:-3px 4px 0 #ed001b,-8px 8px 0 #cd003a,-14px 12px 0 #bb0647,-20px 17px 0 #a31057,-26px 22px 0 #851967}}
+
+.intro .stock strong,.intro .stock b{text-shadow:-1px 1px 0 rgb(234,1,29),-2px 2px 0 rgb(231,1,31),-3px 2px 0 rgb(228,2,33),-4px 3px 0 rgb(225,3,35),-5px 4px 0 rgb(223,3,38),-6px 4px 0 rgb(220,4,40),-7px 5px 0 rgb(217,5,42),-8px 6px 0 rgb(214,6,44),-9px 7px 0 rgb(211,6,46),-10px 8px 0 rgb(208,7,48),-11px 8px 0 rgb(205,8,50),-12px 9px 0 rgb(202,8,52),-13px 10px 0 rgb(199,9,54),-14px 10px 0 rgb(197,10,57),-15px 11px 0 rgb(194,10,59),-16px 12px 0 rgb(191,11,61),-17px 13px 0 rgb(188,12,63),-18px 14px 0 rgb(185,12,65),-19px 14px 0 rgb(182,13,67),-20px 15px 0 rgb(179,14,69),-21px 16px 0 rgb(176,15,71),-22px 16px 0 rgb(173,15,73),-23px 17px 0 rgb(171,16,76),-24px 18px 0 rgb(168,17,78),-25px 19px 0 rgb(165,17,80),-26px 20px 0 rgb(162,18,82),-27px 20px 0 rgb(159,19,84),-28px 21px 0 rgb(156,19,86),-29px 22px 0 rgb(153,20,88),-30px 22px 0 rgb(150,21,90),-31px 23px 0 rgb(147,22,92),-32px 24px 0 rgb(145,22,95),-33px 25px 0 rgb(142,23,97),-34px 26px 0 rgb(139,24,99),-35px 26px 0 rgb(136,24,101),-36px 27px 0 rgb(133,25,103)}.intro .stock strong{-webkit-text-stroke:10px #ed001b}.intro .stock b{-webkit-text-stroke:7px #ed001b}
+@media(max-width:800px){.intro .stock strong{-webkit-text-stroke:6px #ed001b}.intro .stock b{-webkit-text-stroke:5px #ed001b}}
+/* Stronger red outline, retaining the yellow letter faces. */
+.intro .stock strong{-webkit-text-stroke:16px #ed001b}.intro .stock b{-webkit-text-stroke:11px #ed001b}
+@media(max-width:800px){.intro .stock strong{-webkit-text-stroke:10px #ed001b}.intro .stock b{-webkit-text-stroke:8px #ed001b}}
+/* Use the supplied flyer lettering directly, without altering its pixels. */
+.intro .stock.stock-art{display:block;width:min(480px,90%);padding:0;margin:24px auto 38px}.stock-crop{display:block;position:relative;width:100%;aspect-ratio:1884/835;overflow:hidden}.stock-crop>img{display:block;width:100%;height:auto}
+
+
+.intro .stock-heading{display:block;position:relative;width:100%;aspect-ratio:2172/250;margin:0 auto 24px;padding:0;border:0;overflow:hidden;background:none}.intro .stock-heading:before,.intro .stock-heading:after{display:none}.stock-heading img{position:absolute;width:100%;max-width:none;height:auto;left:0;top:-92%}
+@media(min-width:801px){.intro .stock.stock-art{width:min(720px,90%)}}
+
+/* A single light sweep, clipped to the transparent stock artwork. */
+@media(prefers-reduced-motion:no-preference){
+ .stock-crop::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.15) 44%,rgba(255,255,255,.8) 50%,rgba(255,255,255,.15) 56%,transparent 60%) -100% 0/300% 100% no-repeat;-webkit-mask:url('./assets/400.png') center/100% 100% no-repeat;mask:url('./assets/400.png') center/100% 100% no-repeat}
+ .stock-crop.text-play::after{animation:stock-shine 1.1s ease-in-out 1.05s both}
+ @keyframes stock-shine{0%{opacity:0;background-position:100% 0}10%{opacity:1}90%{opacity:1}100%{opacity:0;background-position:0% 0}}
+}
+
+/* Soft decorative balloons stay at the edges of this section. */
+.intro{position:relative;isolation:isolate}
+.intro-balloons{position:absolute;inset:0 -20px;overflow:hidden;z-index:-1;pointer-events:none}
+.fair-balloon{--balloon:#77c9ee;position:absolute;left:1%;top:34%;width:55px;height:68px;border-radius:49% 51% 47% 47%;background:radial-gradient(ellipse at 30% 25%,#fff9 0%,transparent 30%),var(--balloon);opacity:.35;transform:rotate(-8deg)}
+.fair-balloon:before{content:"";position:absolute;left:calc(50% - 5px);bottom:-6px;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:8px solid var(--balloon)}
+.fair-balloon:after{content:"";position:absolute;left:50%;top:calc(100% + 6px);width:14px;height:75px;border-left:1px solid #8ba7b5;border-radius:50%;transform:rotate(-8deg)}
+.fair-balloon:nth-child(2){--balloon:#ffcb6b;left:auto;right:1%;top:58%;width:48px;height:61px;animation-delay:-3s}
+.fair-balloon:nth-child(3){--balloon:#f2a8c7;left:4%;top:77%;width:40px;height:51px;animation-delay:-5s}
+.fair-balloon:nth-child(4){--balloon:#a5dcb2;left:auto;right:3%;top:19%;width:42px;height:54px;animation-delay:-1s}
+@media(prefers-reduced-motion:no-preference){.fair-balloon{animation:fair-balloon-float 7s ease-in-out infinite alternate}@keyframes fair-balloon-float{from{translate:0 20px;rotate:-5deg}to{translate:8px -35px;rotate:6deg}}}
+@media(max-width:800px){.intro-balloons{inset:0 -12px}.fair-balloon{width:26px;height:34px;opacity:.22;left:0;top:33%}.fair-balloon:nth-child(2){width:25px;height:32px;right:0;top:59%}.fair-balloon:nth-child(n+3){display:none}.fair-balloon:after{height:40px}}
+
+/* Keep balloons visible above the section background and behind content. */
+.intro>.intro-balloons{z-index:0;inset:0;}
+.intro>:not(.intro-balloons){position:relative;z-index:1}
+.intro .fair-balloon{opacity:.72;width:72px;height:90px;left:2%;}
+.intro .fair-balloon:nth-child(2){left:auto;right:2%;width:65px;height:82px}
+.intro .fair-balloon:nth-child(3){left:3%;width:54px;height:68px}
+.intro .fair-balloon:nth-child(4){left:auto;right:3%;width:58px;height:73px}
+@media(max-width:800px){.intro .fair-balloon{width:32px;height:41px;left:0;opacity:.55}.intro .fair-balloon:nth-child(2){width:30px;height:39px;right:0}}
+
+.intro .fair-balloon:nth-child(5){--balloon:#b9a3ee;left:8%;top:18%;width:42px;height:54px;animation-delay:-2s}
+.intro .fair-balloon:nth-child(6){--balloon:#f6a49c;left:auto;right:8%;top:39%;width:44px;height:56px;animation-delay:-4s}
+.intro .fair-balloon:nth-child(7){--balloon:#ffcb6b;left:6%;top:57%;width:40px;height:51px;animation-delay:-6s}
+.intro .fair-balloon:nth-child(8){--balloon:#77c9ee;left:auto;right:4%;top:79%;width:44px;height:56px;animation-delay:-1.5s}
+@media(max-width:800px){
+ .intro .fair-balloon:nth-child(-n+4){display:block;width:26px;height:34px;opacity:.65}
+ .intro .fair-balloon:nth-child(1){left:0;right:auto;top:25%}
+ .intro .fair-balloon:nth-child(2){left:auto;right:0;top:27%}
+ .intro .fair-balloon:nth-child(3){left:0;right:auto;top:49%}
+ .intro .fair-balloon:nth-child(4){left:auto;right:0;top:49%}
+ .intro .fair-balloon:nth-child(n+5){display:none}
+}
+
+
+/* Match the trust-card heading size for every dealer name. */
+.dealer-grid strong{font-size:23px;font-weight:700;line-height:1.65;white-space:nowrap;flex-shrink:0}
+@media(max-width:1000px){.dealer-grid :is(a,.dealer-card){flex-wrap:wrap;gap:4px 12px}.dealer-grid .dealer-link{flex-basis:100%;text-align:right;margin-left:0}}
+
+/* Asymmetric clusters instead of two vertical rows. */
+@media(min-width:801px){
+ .intro .fair-balloon:nth-child(1){left:1%;top:36%;width:66px;height:83px}
+ .intro .fair-balloon:nth-child(2){right:2%;top:65%;width:64px;height:81px}
+ .intro .fair-balloon:nth-child(3){left:4%;top:71%;width:44px;height:56px}
+ .intro .fair-balloon:nth-child(4){right:2%;top:23%;width:59px;height:74px}
+ .intro .fair-balloon:nth-child(5){left:17%;top:22%;width:37px;height:47px}
+ .intro .fair-balloon:nth-child(6){right:12%;top:18%;width:35px;height:45px}
+ .intro .fair-balloon:nth-child(7){left:8%;top:32%;width:31px;height:40px}
+ .intro .fair-balloon:nth-child(8){right:8%;top:58%;width:34px;height:44px}
+}
+@media(max-width:800px){
+ .intro .fair-balloon:nth-child(1){left:1%;top:26%;width:29px;height:37px}
+ .intro .fair-balloon:nth-child(2){right:4%;top:52%;width:24px;height:31px}
+ .intro .fair-balloon:nth-child(3){left:7%;top:50%;width:21px;height:28px}
+ .intro .fair-balloon:nth-child(4){right:0;top:30%;width:25px;height:33px}
+}
+
+.floating{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);margin:0;z-index:15}footer{padding-bottom:145px}
