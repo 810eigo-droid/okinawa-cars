@@ -88,3 +88,5 @@
  .intro .fair-balloon:nth-child(3){left:7%;top:50%;width:21px;height:28px}
  .intro .fair-balloon:nth-child(4){right:0;top:30%;width:25px;height:33px}
 }
+
+.floating{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);margin:0;z-index:15}footer{padding-bottom:145px}

@@ -77,25 +77,11 @@
  }
  preference.addEventListener('change', () => {clearTimeout(timer);banner.classList.remove('cars-playing');observer?.disconnect();});
 })();
-// Mobile access bar appears after the midpoint; artwork banners stay in flow.
+// Keep the access bar available throughout the page on every screen size.
 (() => {
  const bar = document.querySelector('.floating');
  if (!bar) return;
- const mobile = matchMedia('(max-width:800px)');
- let queued = false;
- function update() {
-  queued = false;
-  const range = Math.max(0, document.documentElement.scrollHeight - innerHeight);
-  const visible = !mobile.matches || range === 0 || scrollY >= range * .5;
-  bar.classList.toggle('mobile-bar-ready', visible);
-  bar.inert = !visible;
-  bar.setAttribute('aria-hidden', String(!visible));
- }
- function schedule() { if(!queued) {queued = true;requestAnimationFrame(update);} }
- bar.classList.add('mobile-bar-managed');
- addEventListener('scroll', schedule, {passive:true});
- addEventListener('resize', schedule);
- addEventListener('load', schedule);
- if ('ResizeObserver' in window) new ResizeObserver(schedule).observe(document.body);
- update();
+ bar.classList.remove('mobile-bar-managed', 'mobile-bar-ready');
+ bar.inert = false;
+ bar.removeAttribute('aria-hidden');
 })();
